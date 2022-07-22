@@ -29,17 +29,37 @@ section#telefone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+/* translate para ajuste central melhorado */
     height: 627px;
     width: 311px;
     background-color: blue;
     background: url(../imagens/frame-iphone.png) no-repeat;
 }
-
+/* Altura e largura visto pelo gimp*/
 iframe#tela {
     position: relative;
     top: 80px;
     left: 22px;
     width: 269px;
     height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+/* text-align para colocar botões a direita */
+section#redes-sociais img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.401);
+    box-sizing: border-box;
+}
+/* border-radius é para arredondar; shadow é para criar sobra; box-sizing para o border fazer parte do objeto */
+section#redes-sociais img:hover{
+    border: solid rgba(255, 255, 255, 0.601);
+    transform: translate(-3px -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.654);
+    transition: transform 1s, border 1s;
 }
